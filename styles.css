@@ -1,0 +1,101 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: Poppins, sans-serif;
+    padding: 15px 100px 15px 100px; 
+    border-radius: 30px;
+    background-color: rgb(85, 29, 29);
+    color: white;
+}
+
+.table {
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+table {
+    font-family: Teachers, sans-serif;
+    font-size: 18px;
+    border-collapse: collapse;
+    padding: 10px 30px 10px 30px;
+}
+
+table tr td {
+    padding: 10px 20px 10px 20px;
+}
+
+table tbody tr:hover {
+    background-color: rgb(85, 29, 29);
+    color: white;
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(85, 29, 29);
+    margin-top: 20px;
+    width: 100%;
+    font-family: Teachers, sans-serif;
+    padding: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+.p1 {
+    flex: 1;
+    margin-left: 50px;
+}
+
+.p2 {
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    h1 {
+        font-size: 17px;
+        padding: 15px 40px 15px 40px;
+    }
+
+    table {
+        font-size: 15px;
+    }
+
+    .table {
+        margin: 0 15px;
+    }
+
+    table tr td {
+        padding: 10px
+    }
+
+    .paragraphs {
+        flex-direction: column; 
+        padding: 0;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .p1 {
+        margin-left: 100px;
+    }
+    
+    .p2 {
+        margin-left: 100px;
+    }
+
+}
+
+
